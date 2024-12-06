@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corps Humain Interactif</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Explorez le Corps Humain</h1>
+      <p>Cliquez sur une partie du corps pour afficher des informations.</p>
+    </header>
+
+    <main>
+      <!-- Conteneur pour le corps -->
+      <section class="body-container">
+        <!-- Image du corps vide -->
+        <div class="body-image">
+          <img
+            src="image/corps_vide.png"
+            alt="Corps Humain Vide"
+            class="corps-vide"
+          />
+
+          <!-- Images des organes -->
+          <img
+            src="image/cerveau.png"
+            alt="Cerveau"
+            class="body-part cerveau"
+            onclick="showInfo('brain')"
+          />
+          <img
+            src="image/poumon.png"
+            alt="Poumons"
+            class="body-part poumons"
+            onclick="showInfo('lungs')"
+          />
+          <img
+            src="image/coeur.png"
+            alt="Cœur"
+            class="body-part coeur"
+            onclick="showInfo('heart')"
+          />
+        </div>
+      </section>
+
+      <!-- Section pour afficher les informations -->
+      <section class="info-section">
+        <h2 id="info-title">Cliquez sur une partie du corps</h2>
+        <p id="info-description">Les informations apparaîtront ici.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 - Exploration interactive du corps humain</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
